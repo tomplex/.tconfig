@@ -1,1 +1,7 @@
-.gitconfig
+[user]
+	email = carusot42@gmail.com
+	name = tom caruso
+[push]
+	default = simple
+[core]
+	excludesfile = ~/.gitignore_global

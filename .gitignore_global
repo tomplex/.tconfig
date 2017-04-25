@@ -1,1 +1,6 @@
-.gitignore_global
+.idea
+.gitignore
+*.swp
+*.pyc
+__pycache__/
+node_modules/

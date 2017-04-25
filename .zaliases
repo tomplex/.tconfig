@@ -1,1 +1,14 @@
-.zaliases
+alias c="xclip"
+alias cclip="xclip -sel clip"
+alias v="xclip -o"
+
+alias ls='ls --color=auto'
+alias ll='ls -alF'
+alias la='ls -A'
+alias l='ls -CF'
+alias sz='ls -lh | sort -nk5  | tail -10'
+
+alias lg='git status'
+
+alias docker_rm_all="sudo docker rm $(docker ps -q -f status=exited)"
+
