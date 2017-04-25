@@ -29,9 +29,11 @@ git clone https://github.com/terryma/vim-expand-region
 
 # install personal config files
 echo "linking personal config"
-ln -s "$(dirname -- "$0")"/.zshrc ~/.zshrc
-ln -s "$(dirname -- "$0")"/.zaliases ~/.zaliases
-ln -s "$(dirname -- "$0")"/.vimrc ~/.vimrc
-ln -s "$(dirname -- "$0")"/.gitconfig ~/.gitconfig
-ln -s "$(dirname -- "$0")"/.gitignore_global ~/.gitignore_global
+cd
+export folderpath="$PWD/.tconfig"
+ln -s $folderpath/.zshrc ~/.zshrc
+ln -s $folderpath/.zaliases ~/.zaliases
+ln -s $folderpath/.vimrc ~/.vimrc
+ln -s $folderpath/.gitconfig ~/.gitconfig
+ln -s $folderpath/.gitignore_global ~/.gitignore_global
 
