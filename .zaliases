@@ -6,6 +6,8 @@ alias ls='ls --color=auto'
 alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
+alias lh='ls -ld .?*' 
+
 alias sz='ls -lh | sort -nk5  | tail -10'
 
 alias lg='git status'
