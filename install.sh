@@ -25,7 +25,7 @@ git clone https://github.com/tpope/vim-sensible
 git clone https://github.com/bling/vim-airline
 git clone https://github.com/fatih/vim-go
 git clone https://github.com/terryma/vim-expand-region
-
+git clone https://github.com/jiangmiao/auto-pairs
 
 # install personal config files
 echo "linking personal config"

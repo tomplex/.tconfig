@@ -38,20 +38,27 @@ map <C-n> :NERDTreeToggle . <CR>
 let NERDTreeShowHidden=1
 let NERDTreeIgnore=['\.pyc$', '\~$'] "ignore files in NERDTree
 
+au BufNewFile,BufRead *.go set
+    \ tabstop=4 
+    \ softtabstop=4 
+    \ shiftwidth=4 
+    \ expandtab 
+    \ autoindent 
+    \ fileformat=unix
 
-au BufNewFile,BufRead *.py
-    \ set tabstop=4
-    \ set softtabstop=4
-    \ set shiftwidth=4
-    \ set textwidth=79
-    \ set expandtab
-    \ set autoindent
-    \ set fileformat=unix
+au BufNewFile,BufRead *.py set
+    \ tabstop=4
+    \ softtabstop=4
+    \ shiftwidth=4
+    \ textwidth=79
+    \ expandtab
+    \ autoindent
+    \ fileformat=unix
 
-au BufNewFile,BufRead *.js, *.html, *.css
-    \ set tabstop=2
-    \ set softtabstop=2
-    \ set shiftwidth=2
+au BufNewFile,BufRead *.js, *.html, *.css set
+    \ tabstop=2
+    \ softtabstop=2
+    \ shiftwidth=2
 
 au BufRead,BufNewFile *.py,*.pyw,*.c,*.h match BadWhitespace /\s\+$/
 
